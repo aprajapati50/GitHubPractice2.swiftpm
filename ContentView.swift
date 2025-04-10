@@ -7,7 +7,9 @@ struct ContentView: View {
     var body: some View {
         
         TextField("Enter Number 1 here", value: $number1, format: .number)
+            .multilineTextAlignment(.center)
         TextField("Enter Number 2 here", value: $number2, format: .number)
+            .multilineTextAlignment(.center)
         HStack{
             Button("Add") {
                 answer = number1 + number2
