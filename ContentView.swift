@@ -10,5 +10,6 @@ struct ContentView: View {
         Button("Add") {
             answer = number1 + number2
         }
+        Text("\(answer)")
     }
 }
